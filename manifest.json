@@ -14,5 +14,11 @@
         "default_title": "Catify",
         "defalut_popup": "popup/popup.html"
     },
-    "permissions": ["storage"]
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/injects.js"]
+        }
+    ]
 }
